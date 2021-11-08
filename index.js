@@ -45,8 +45,9 @@ const questions = [
                 return true
             }
         }},
-        {type: 'input',
-        message: 'What type of license is this project used under?',
+        {type: 'list',
+        message: 'Please choose a license type for your open source project',
+        choices: ['Apache', 'Boost', 'BSD', 'Creative Commons', 'Eclipse', 'GNU', 'MIT', 'Mozilla', 'None'],
         name: 'license',
         validate: (response) => {
             if(!response){
@@ -209,3 +210,9 @@ init();
 // // The URL of the GitHub repository, with a unique name and a README describing the project
 
 // // © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+// switch(operation){
+//     case '':
+//         somecode
+//         break
+// }
