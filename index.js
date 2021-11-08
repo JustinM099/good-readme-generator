@@ -7,31 +7,87 @@ const generateMarkdown = require('./utils/generateMarkdown.js')
 const questions = [
         {type: 'input',
         message: 'What is the title of your project?',
-        name: 'title'},
+        name: 'title',
+        validate: (response) => {
+            if(!response){
+                return console.log('This response is required.')
+            }else{
+                return true
+            }
+        }},
         {type: 'input',
         message: 'What is a description of your project?',
-        name: 'description'},
+        name: 'description',
+        validate: (response) => {
+            if(!response){
+                return console.log('This response is required.')
+            }else{
+                return true
+            }
+        }},
         {type: 'input',
         message: 'How is your project installed?',
-        name: 'installation'},
+        name: 'installation',
+        validate: (response) => {
+            if(!response){
+                return console.log('This response is required.')
+            }else{
+                return true
+            }
+        }},
         {type: 'input',
         message: 'How is your project used?',
-        name: 'usage'},
+        name: 'usage',
+        validate: (response) => {
+            if(!response){
+                return console.log('This response is required.')
+            }else{
+                return true
+            }
+        }},
         {type: 'input',
-        message: 'What type of lciense is this project used under?',
-        name: 'license'}, //this is going to have to be checkbox, probably
+        message: 'What type of license is this project used under?',
+        name: 'license',
+        validate: (response) => {
+            if(!response){
+                return console.log('This response is required.')
+            }else{
+                return true
+            }
+        }}, //this is going to have to be checkbox, probably
         {type: 'input',
         message: 'How would a user contribute to your project?',
-        name: 'contributing'},
+        name: 'contributing',
+        validate: (response) => {
+            if(!response){
+                return console.log('This response is required.')
+            }else{
+                return true
+            }
+        }},
         {type: 'input',
         message: 'What command is required to test your project?', //maybe a default input here
-        name: 'tests'},
+        name: 'tests',
+        validate: (response) => {
+            if(!response){
+                return console.log('This response is required.')
+            }else{
+                return true
+            }
+        }},
         {type: 'input',
         message: 'What is your GitHub address?',
         name: 'questionsGithub'},
         {type: 'input',
         message: 'What is your email address?',
-        name: 'questionsEmail'},
+        name: 'questionsEmail',
+        validate: (response) => {
+            if(!response){
+                return console.log('This response is required.')
+            }else{
+                return true
+            }
+        }},
 ];
 
 
