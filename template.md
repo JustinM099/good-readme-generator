@@ -1,8 +1,9 @@
-# ${answers.title}
+# ${data.title}
 
-### ${answers.description}
+### ${data.description}
 
 ## Table of Contents
+
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [License](#license)
@@ -12,14 +13,29 @@
 
 ## Installation
 
+${data.installation}
+
 ## Usage
+
+${data.usage}
 
 ## License
 
+${data.license}
+
 ## Contributing
+
+${data.contributing}
 
 ## Tests
 
+${data.tests}
+
 ## Questions
+
+Please feel free to reach out!
+
+${data.questionsEmail}
+${data.questionsGithub}
 
 
