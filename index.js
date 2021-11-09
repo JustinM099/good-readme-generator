@@ -22,7 +22,7 @@ const questions = [
             if(!response){
                 return console.log('This response is required.')
             }else{
-                return trueP
+                return true
             }
         }},
         {type: 'input',
