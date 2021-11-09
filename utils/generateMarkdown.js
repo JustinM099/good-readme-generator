@@ -76,8 +76,9 @@ ${renderLicenseBadge(data.license)}
   
   Please feel free to reach out!
   
-  ${data.questionsEmail}
-  ${data.questionsGithub}
+  My email address is ${data.questionsEmail}  and my GitHub can be found at${data.questionsGithub}.
+
+  Thank you!
 `;
 }
 
