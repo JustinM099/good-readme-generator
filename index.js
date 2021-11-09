@@ -50,7 +50,7 @@ const questions = [
         validate: (response) => {
             if(!response){
                 return console.log('This response is required.')
-            }else{
+            }else{  
                 return true
             }
         }},
