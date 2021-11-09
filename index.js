@@ -1,9 +1,7 @@
-// TODO: Include packages needed for this application
 const fs = require('fs')
 const inquirer = require('inquirer')
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
-// TODO: Create an array of questions for user input
 const questions = [
         {type: 'input',
         message: 'What is the title of your project?',
@@ -55,7 +53,7 @@ const questions = [
             }else{
                 return true
             }
-        }}, //this is going to have to be checkbox, probably
+        }},
         {type: 'input',
         message: 'How would a user contribute to your project?',
         name: 'contributing',
@@ -91,20 +89,16 @@ const questions = [
         }},
 ];
 
-
-// TODO: Create a function to write README file
 function writeToFile(fileName, data){
         fs.writeFile(`${fileName}`, data, (err) =>
         err ? console.error('Error! : ' + err) : console.log('Your README has been successfully generated!'))
     }
-// TODO: Create a function to initialize app
+
 function init() {
        inquirer.prompt(questions).then((data) => writeToFile('yourREADME.md', generateMarkdown(data)))
     }
 
-// Function call to initialize app
 init();
-
 
 // Your Task
 // When creating an open source project on GitHub, it’s important to have a high-quality README for the app. 
